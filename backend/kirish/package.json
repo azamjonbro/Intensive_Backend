@@ -1,0 +1,17 @@
+{
+  "name": "lesson1",
+  "version": "1.0.0",
+  "description": "it's new back end lesson",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "author": "azamjonbro",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0",
+    "node-telegram-bot-api": "^0.66.0",
+    "nodemon": "^3.1.10"
+  }
+}
