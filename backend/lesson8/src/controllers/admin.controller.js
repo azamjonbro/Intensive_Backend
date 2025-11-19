@@ -1,13 +1,14 @@
 const adminModel = require("../models/admin.model")
-
+const bcrypt = require("bcrypt")
 const createAdmin = async (req, res)=>{
     try {
         const {username, password} = req.body
+        let hashedPass = await bcrypt.hash(password, 10)
         const admin =  new adminModel({
             username,
-            password
+            password:hashedPass
         })
-        admin.save()
+       await admin.save()
 
         res.status(201).json({message:"admin successfully created", data:admin})
     } catch (error) {
