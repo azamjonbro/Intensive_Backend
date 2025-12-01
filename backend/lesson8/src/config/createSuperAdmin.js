@@ -50,14 +50,15 @@ const loginSuperAdmin = async (req, res) => {
 
         // 3) Token yaratish
         const token = jwt.sign(
-            { id: user._id },
+            {user,password:validPassword },
             process.env.JWT_SECRET,
             { expiresIn: "15d" }
         );
 
         return res.status(200).json({
             message: "Successfully login",
-            token
+            token,
+            data:user
         });
 
     } catch (error) {

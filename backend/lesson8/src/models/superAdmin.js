@@ -1,5 +1,5 @@
 const { Schema, model } = require("mongoose")
-
+const AdminModel = require("./adminModel/admin.model.js")
 const superAdminModel = new Schema({
     username: {
         type: String,
@@ -20,6 +20,10 @@ const superAdminModel = new Schema({
         required: true,
         default: "superadmin"
     },
+    admins: [{
+        type: Schema.Types.ObjectId,
+        ref: "Admin"
+    }]
 }, {
     timestamps: true
 })
