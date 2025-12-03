@@ -19,7 +19,7 @@ const adminSchema = new Schema({
         required: true,
         lowercase: true
     },
-    userInfo: userInfoSchema,
+    adminInfo: [userInfoSchema],
     billing: billingSchema
 }, {
     timestamps: true

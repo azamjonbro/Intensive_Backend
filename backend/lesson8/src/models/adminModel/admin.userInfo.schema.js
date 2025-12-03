@@ -11,7 +11,7 @@ const userInfoSchema = new Schema({
         required: true,
     },
     images: {
-        type: [String], // ko'p rasm uchun
+        type: [String], 
         required: true,
     },
     bio: {
