@@ -1,1 +1,1 @@
-# Intensive_Backend
+# bu course Azizbek aka va Abdulaziz uchun. intensive Back end Express kursi
