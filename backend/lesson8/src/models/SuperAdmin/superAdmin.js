@@ -1,5 +1,5 @@
 const { Schema, model } = require("mongoose")
-const AdminModel = require("./adminModel/admin.model.js")
+const AdminModel = require("../adminModel/admin.model.js")
 const superAdminModel = new Schema({
     username: {
         type: String,

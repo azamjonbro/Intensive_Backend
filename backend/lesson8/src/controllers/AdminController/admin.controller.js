@@ -1,5 +1,5 @@
-const adminModel = require("../models/adminModel/admin.model")
-const SuperAdminModel = require("../models/superAdmin.js")
+const adminModel = require("../../models/adminModel/admin.model")
+const SuperAdminModel = require("../../models/SuperAdmin/superAdmin.js")
 const bcrypt = require("bcrypt")
 const createAdmin = async (req, res) => {
     try {

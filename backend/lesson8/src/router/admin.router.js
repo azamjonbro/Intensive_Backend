@@ -1,6 +1,6 @@
 const express = require("express")
-const { createAdmin, getAdmins, deleteAdmin, updateAdmin } = require("../controllers/admin.controller")
-const {loginAdmin} = require("../controllers/login.controller")
+const { createAdmin, getAdmins, deleteAdmin, updateAdmin } = require("../controllers/AdminController/admin.controller")
+const {loginAdmin} = require("../controllers/AdminController/login.controller")
 const router = express.Router()
 const {superAdminMiddleware} = require("../middlewares/superadmin.middlewares")
 
