@@ -1,0 +1,4 @@
+isagiyouchi220_db_user
+1x0DnsErnaFlWdcV
+
+mongodb+srv://isagiyouchi220_db_user:1x0DnsErnaFlWdcV@azizbek.9hy6zq2.mongodb.net/?appName=azizbek
